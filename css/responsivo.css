@@ -1,0 +1,22 @@
+@media (max-width: 768px)
+{
+    .menu{
+        display: none;
+    }
+
+    .btnMenu{
+        display: block;
+        padding: clamp(1rem, 1.5vw, 1rem);
+
+        font-size: clamp(2rem, 1.5vw, 3rem);
+
+    }
+
+}
+
+@media (min-width: 768px) 
+{
+    .btnMenu{
+        display: none;
+    }    
+}
