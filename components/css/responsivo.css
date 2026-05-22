@@ -3,6 +3,9 @@
     .menu{
         display: none;
     }
+    .BoxLogin{
+        display: none;
+    }
 
     .btnMenu{
         display: block;
@@ -12,10 +15,19 @@
 
     }
 
+    .TituloLogo{
+    width: clamp(10.5rem, 3vw, 11.5rem);
+    }   
+
 }
 
 @media (min-width: 768px) 
 {
+    .TituloLogo{
+    margin-top: 5px;
+    width: clamp(14rem, 3vw, 14.5rem);
+    }   
+
     .btnMenu{
         display: none;
     }    
