@@ -1,84 +1,146 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
+
+   <!-- CONFIGURAÇÕES -->
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    <!-- SEO -->
+    <meta
+    name="description"
+    content="Especialistas em portas automáticas para vans. Instalação, manutenção e reparos.">
+
+    <!-- TÍTULO -->
     <title>Dr. Portas</title>
 
-    <link rel="stylesheet" href="../components/css/global.css">
-
-    <link rel="stylesheet" href="../components/css/responsivo.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/responsive.css">
         
 </head>
 
 <body>
 
-    <header class="headerHome">
-                
-            <div class="TituloLogo">
-            <a href="home.html"> <img id="imgTitulo" src="../assets/img/Logo.png" alt="Logo"></a>
-            </div>  
+    <!-- HEADER -->
+    <header class="header">
             
+            <!-- LOGO -->
+            <div class="Logo">
+
+                <a href="home.html">
+
+                 <img id="imgLogo" 
+                 src="../assets/img/Logo.png" 
+                 alt="Logo">
+                
+                </a>
+
+            </div>  
+
+            <!-- MENU -->
+
             <nav class="menu">
+
                 <a href=""> Sobre a Empresa</a>
                 <a href=""> Contato</a>
                 <a href=""> Suporte</a>
+
             </nav>
 
+            <!-- BOTÃO MENU MOBILE-->
             <button class="btnMenu" id="btnMenu">
+
                 ☰
+
             </button>
 
-            <div class="TextoHeader">
-                <h2> Sobre o</h2>
-                <h1> Dr.Portas</h1>
-            </div>
+            <!-- AÇÕES HEADER -->
+            <div class="header-actions">
 
-            <div class="BoxLogin">
-
-                <button id="btnLogin">
-                    <a href="login.html"> <img id="imgLogin" src="../assets/img/Login.png" alt="Login"></a>
-                </button>
-
+                <!-- IDIOMAS -->
                 <button id="btnPortugues">
-                    <img src="../assets/img/Bandeira-Brasil.jpg">
+
+                    <img 
+                    src="../assets/img/Bandeira-Brasil.jpg" 
+                    alt="Bandeira-Brasil">
+
                 </button>
                 
                 <button id="btnIngles">
-                    <img src="../assets/img/Bandeira-EUA.png">
-                </button>
 
-                <button id="btnProcurar">
-                    <img src="../assets/img/Search.png">
+                    <img 
+                    src="../assets/img/Bandeira-EUA.png"
+                     alt="Bandeira-EUA">
+
                 </button>
 
             </div>
 
     </header>
 
+    <!-- MAIN -->
     <main>
         
-        <div class="BoxMeio">
+        <!-- HERO -->
+        <section class="hero">
 
-            <h1> Sobre Nosso Trabalho </h1>
+            <div class="container">
 
-            <div>
-            <img src="../assets/img/imgBoxMeio.jpeg">
+                <p>
+                    +15 Anos no Mercado
+                </p>
 
-            <p> 
-                O Dr. Portas é especializada em soluções para portas automáticas de vans, oferecendo instalação, manutenção e reparos com qualidade, segurança e eficiência. 
-                Trabalhamos com portas automáticas de correia, motores eletrônicos e sistemas automatizados, garantindo praticidade e conforto para motoristas e passageiros.
-                Nossa equipe atua com atendimento profissional e serviços especializados, realizando manutenção preventiva e corretiva para manter o funcionamento perfeito das portas automáticas. Na Dr. Portas, buscamos sempre oferecer tecnologia, confiança e agilidade em cada serviço realizado.
-            </p>
+                <h1> 
+                    Especialistas em Portas Automáticas
+                </h1>
+
+                <div class="hero-content">
+
+                    <p> 
+                        Instalação, manutenção e automação de qualidade e com
+                        segurança em sua van, garantido seu conforto e priorizando 
+                        a durabilidade de sua porta.
+                    </p>
+
+                    <button id="hero-btn">
+                         Solicitar Orçamento
+                    </button>
+
+                </div>
+
+            </div>
+        
+        </section>
+
+
+        <!-- SOBRE A EMPRESA -->
+        <section class="about">
+
+            <div class="container">
+
+                <h1> Sobre Nosso Trabalho </h1>
+
+                <div class="about-content">
+
+                    <img src="../assets/img/imgBoxMeio.jpeg">
+
+                    <div class="about-text"> 
+                        <p> 
+                            O Dr. Portas é especializada em soluções para portas automáticas de vans, oferecendo instalação, manutenção e reparos com qualidade, segurança e eficiência. 
+                            Trabalhamos com portas automáticas de correia, motores eletrônicos e sistemas automatizados, garantindo praticidade e conforto para motoristas e passageiros.
+                            Nossa equipe atua com atendimento profissional e serviços especializados, realizando manutenção preventiva e corretiva para manter o funcionamento perfeito das portas automáticas. Na Dr. Portas, buscamos sempre oferecer tecnologia, confiança e agilidade em cada serviço realizado.
+                        </p>
+                    </div>
+
+                </div>
 
             </div>
 
-        </div>
-
-
+        </section>
     </main>
+    
 
 </body>
 </html>

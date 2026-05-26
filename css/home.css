@@ -1,0 +1,139 @@
+/* MENU ----------------------------------------*/
+.menu{
+    display: flex;
+    padding: 3rem;
+
+    gap: 2rem;
+    font-size: clamp(16px, 1.5vw, 18px);
+}
+
+.menu a{
+    text-decoration: none;
+    cursor: pointer;
+
+    color: white;
+
+    transition: .3s;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,.2);
+}
+
+
+.menu a:hover{
+    color: #f0b232;
+    
+    transform: translateY(-10px);   
+
+    box-shadow: 0 10px 25px rgba(0,0,0,.2);
+}
+
+/* BOX LOGIN ----------------------------------------*/
+
+.header-actions{
+    display: flex;
+    flex-direction: row;
+    
+    padding: clamp(0.5rem, 1vw, 1rem);
+
+    gap: 2rem;
+    font-size: clamp(18px, 1.5vw, 20px);
+
+    transition: .5s;
+
+}
+
+.header-actions:hover{
+    transform: scale(1.1);
+}
+
+.header-actions button{
+    width: clamp(2rem, 2vw, 3rem);
+    border: none;
+
+    background-color: transparent;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+}
+
+.header-actions button:hover{
+    transform: translateY(-10px);
+}
+
+/* BOX LOGIN ----------------------------------------*/
+
+/* ABOUT ----------------------------------------*/
+
+.about{
+    margin-top: 3rem;
+    
+      background: linear-gradient(
+        to bottom,
+        #111111,
+        #181818
+    );
+
+}
+
+.about .container
+{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.about h1{
+    color: #f0b232;
+
+    font-size: clamp(2rem, 8vw, 3rem);
+    font-family: "Inter-Bold";
+
+    box-shadow: 4px 4px 4px rgba(0,0,0,.2);
+
+}
+
+.about-text{
+    font-size: 10px;
+    padding: clamp(2rem, 1.5vw, 3.5rem);
+
+    justify-content: center;
+    text-align: left;
+    align-items: center;
+
+}
+
+.about-content
+{   
+    padding: clamp(1rem, 1.5vw, 2rem);  
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    margin-left: clamp(3rem, 1.5vw, 4rem);
+    gap: 3px;
+}
+
+.about-content img{    
+    
+    max-width: 500px;
+
+    border-radius: 20px;
+
+    object-fit: cover;
+
+    box-shadow: 10px 15px 20px rgba(0,0,0,.6);
+    
+    transition: .3s ease;
+}
+
+.aboout-content img:hover{
+    transform: scale(1.02);
+}
+/* ABOUT ----------------------------------------*/
+

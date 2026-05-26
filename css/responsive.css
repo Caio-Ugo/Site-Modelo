@@ -3,8 +3,19 @@
     .menu{
         display: none;
     }
-    .BoxLogin{
+
+    .header-actions{
         display: none;
+    }
+    
+       
+    .about-content{
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    .about-content img{
+        max-width: 300px;
     }
 
     .btnMenu{
@@ -23,10 +34,6 @@
 
 @media (min-width: 768px) 
 {
-    .TituloLogo{
-    margin-top: 5px;
-    width: clamp(14rem, 3vw, 14.5rem);
-    }   
 
     .btnMenu{
         display: none;
