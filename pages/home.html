@@ -43,9 +43,8 @@
 
             <nav class="menu">
 
-                <a href=""> Sobre a Empresa</a>
-                <a href=""> Contato</a>
-                <a href=""> Suporte</a>
+                <a href="#about"> Sobre a Empresa</a>
+                <a href="#contact"> Contato</a>
 
             </nav>
 
@@ -56,10 +55,11 @@
 
             </button>
 
-            <!-- AÇÕES HEADER -->
+    <!--
+                AÇÕES HEADER 
             <div class="header-actions">
 
-                <!-- IDIOMAS -->
+                    IDIOMAS
                 <button id="btnPortugues">
 
                     <img 
@@ -78,6 +78,8 @@
 
             </div>
 
+        -->
+
     </header>
 
     <!-- MAIN -->
@@ -88,27 +90,48 @@
 
             <div class="container">
 
-                <p>
-                    +15 Anos no Mercado
-                </p>
-
-                <h1> 
-                    Especialistas em Portas Automáticas
-                </h1>
-
                 <div class="hero-content">
 
-                    <p> 
-                        Instalação, manutenção e automação de qualidade e com
-                        segurança em sua van, garantido seu conforto e priorizando 
-                        a durabilidade de sua porta.
+                    <p>
+                    +15 Anos no Mercado
                     </p>
 
-                    <button id="hero-btn">
-                         Solicitar Orçamento
-                    </button>
+                    <h1> 
+                        Especialistas em Portas Automáticas
+                    </h1>
+
+                        <div class="hero-text">
+                            <p> 
+                                Instalação, manutenção e automação de qualidade e com
+                                segurança em sua van, garantido seu conforto e priorizando 
+                                a durabilidade de sua porta.
+                            </p>
+
+                            <button id="hero-btn" onclick="window.open('https://wa.me/5573998059229')">
+
+                                Solicitar Orçamento
+
+                            </button>
+                        </div>
 
                 </div>
+
+                <div class="hero-video">
+
+                    <video 
+                        muted 
+                        autoplay 
+                        loop
+                    >
+                        <source src= "../assets/videos/hero-video.mp4"
+                        type="video/mp4"
+                        >
+                    
+                    </video>
+
+                </div>
+
+                
 
             </div>
         
@@ -116,31 +139,110 @@
 
 
         <!-- SOBRE A EMPRESA -->
-        <section class="about">
+        <section class="about" id="about">
 
             <div class="container">
 
-                <h1> Sobre Nosso Trabalho </h1>
+                <div class="about-cover">
 
-                <div class="about-content">
+                    <h1> Sobre Nosso Trabalho </h1>
 
-                    <img src="../assets/img/imgBoxMeio.jpeg">
+                    <img
+                        src="../assets/img/about-img.jpeg"
+                        alt="about-img"
+                    >
+                </div>
 
                     <div class="about-text"> 
                         <p> 
-                            O Dr. Portas é especializada em soluções para portas automáticas de vans, oferecendo instalação, manutenção e reparos com qualidade, segurança e eficiência. 
-                            Trabalhamos com portas automáticas de correia, motores eletrônicos e sistemas automatizados, garantindo praticidade e conforto para motoristas e passageiros.
-                            Nossa equipe atua com atendimento profissional e serviços especializados, realizando manutenção preventiva e corretiva para manter o funcionamento perfeito das portas automáticas. Na Dr. Portas, buscamos sempre oferecer tecnologia, confiança e agilidade em cada serviço realizado.
+                           A Dr. Portas atua há mais de 15 anos no mercado, 
+                           oferecendo serviços especializados em portas automáticas para vans e kombis de transporte. 
+                           Trabalhamos com instalação de motores automáticos, manutenção completa e conserto dos carrinhos das portas laterais, 
+                           sempre buscando entregar segurança, praticidade e qualidade em cada serviço.
+                           Atendemos todos os tipos de vans e kombis, realizando manutenção preventiva e corretiva com experiência e compromisso. 
+                           Nossa empresa está localizada em Santa Luzia e trabalhamos com atendimento em horário marcado, garantindo mais organização, 
+                           agilidade e conforto para nossos clientes.
+                           Na Dr. Portas, prezamos pela confiança, pelo bom atendimento e pela excelência em cada detalhe do serviço prestado.
                         </p>
                     </div>
 
+            </div>
+
+        </section>
+
+
+        <section class="contact" id="contact">
+
+            <div class="container">
+
+                <div class="contact-content">
+
+                    <h2>
+                        Contato - Dr. Portas
+                    </h2>
+
+                    <div class="contact-text">
+
+                        <p>
+                            Entre em contato para agendar sua instalação, manutenção e suporte técnico.
+                            Atendemos em Santa Luzia e região.
+                        </p>
+
+                        <p>📞 Telefone: (73) 99805-9229</p>
+
+                        <p>📍 Santa Luzia - MG</p>
+
+                        <p>🕒 Atendimento com hora marcada - Segunda a Sábado</p>
+
+                    </div>
+                        
+                        <a id="contact-btn"
+                            href="https://wa.me/557398059229"
+                            target="_blank"
+                        >
+                            Chamar no Whatsapp
+                        </a>
                 </div>
 
             </div>
 
         </section>
+
+
     </main>
     
+
+    <div class="cards">
+
+        <!-- INSTAGRAM-CARD -->
+        <a 
+            href="https://ig.me/m/drportasvans"
+            class="instagram-card"
+            target="_blank"
+        >
+            <img
+                src="../assets/img/Instagram-icon.png"
+                alt="Instagram"
+            >
+
+        </a>
+        
+        <!-- WHATSAPP-CARD -->
+        <a 
+            href="https://wa.me/557398059229"
+            class="whatsapp-card"
+            target="_blank"
+        >
+            <img
+                src="../assets/img/whatsapp-icon.png"
+                alt="Whatsapp"
+            >
+
+        </a>
+
+    </div>
+
+    <script src="../js/home.js"></script>
 
 </body>
 </html>

@@ -2,32 +2,41 @@
 {
     .menu{
         display: none;
+        
+        flex-direction: column;
+
+        position: absolute;
+
+        top: 100%;
+        right: 0;
+
+        width: 100%;
+
+        background-color: #111;
+   
+        padding: 2rem;
+
+        gap: 2rem;
+    }
+
+    .menu.active{
+        display: flex;
     }
 
     .header-actions{
         display: none;
     }
     
-       
-    .about-content{
-        flex-direction: column;
-        gap: 2px;
-    }
-
-    .about-content img{
-        max-width: 300px;
-    }
-
     .btnMenu{
         display: block;
-        padding: clamp(1rem, 1.5vw, 1rem);
+        padding: clamp(0.8rem, 1.5vw, 1.2rem);
 
         font-size: clamp(2rem, 1.5vw, 3rem);
 
     }
 
     .TituloLogo{
-    width: clamp(10.5rem, 3vw, 11.5rem);
+    width: clamp(10.5rem, 30vw, 11.5rem);
     }   
 
 }

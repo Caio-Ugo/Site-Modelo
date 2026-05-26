@@ -1,7 +1,6 @@
 /* MENU ----------------------------------------*/
 .menu{
     display: flex;
-    padding: 3rem;
 
     gap: 2rem;
     font-size: clamp(16px, 1.5vw, 18px);
@@ -71,8 +70,7 @@
     
       background: linear-gradient(
         to bottom,
-        #111111,
-        #181818
+        #111111
     );
 
 }
@@ -82,6 +80,8 @@
     display: flex;
     flex-direction: column;
 
+    flex-wrap: wrap;
+
     justify-content: center;
     align-items: center;
 }
@@ -89,51 +89,133 @@
 .about h1{
     color: #f0b232;
 
-    font-size: clamp(2rem, 8vw, 3rem);
+    font-size: clamp(2rem, 6vw, 3rem);
     font-family: "Inter-Bold";
 
-    box-shadow: 4px 4px 4px rgba(0,0,0,.2);
+    padding-bottom: 1rem;
+}
 
+.about-cover{
+    text-align: center;
+    
+    max-width: 1500px;
+
+    min-width: 150px;
+}
+
+.about-cover img{
+    min-height: 100px;
+
+    max-height: 450px;
+
+    border-radius: 20px;
 }
 
 .about-text{
-    font-size: 10px;
-    padding: clamp(2rem, 1.5vw, 3.5rem);
-
+    padding: clamp(1rem, 2vw, 1.4rem);
+    
     justify-content: center;
-    text-align: left;
-    align-items: center;
-
-}
-
-.about-content
-{   
-    padding: clamp(1rem, 1.5vw, 2rem);  
-
-    display: flex;
-
-    justify-content: center;
+    text-align: center;
     align-items: center;
 
     margin-left: clamp(3rem, 1.5vw, 4rem);
-    gap: 3px;
+
 }
 
-.about-content img{    
+.about-text p{
+    font-size: clamp(18px, 2vw, 22px);
+    max-width: 1170px;
     
-    max-width: 500px;
+    width: 100%;
+}
 
-    border-radius: 20px;
+/* ABOUT ----------------------------------------*/
 
-    object-fit: cover;
+/* CONTACT ----------------------------------------*/
 
-    box-shadow: 10px 15px 20px rgba(0,0,0,.6);
+.contact{
+    margin-top: 3rem;
     
+      background: linear-gradient(
+        to bottom,
+        #111111,
+        #181818
+    );
+}
+
+.contact .container{
+    display: flex;
+    flex-direction: column;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-content
+{   
+    display: flex;
+    flex-direction: column;
+
+    padding: clamp(1rem, 1.5vw, 1.4rem);  
+
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-content h2{
+    color: #f0b232;
+
+    font-size: clamp(1.2rem, 6vw, 2.2rem);
+    font-family: "Inter-Bold";
+
+    padding-bottom: 0.1rem;
+}
+
+.contact-text{ 
+    padding: clamp(1rem, 3vw, 1.4rem);
+    
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+}
+
+.contact-text p{
+    line-height: 2.0;
+    font-size: clamp(18px, 2vw, 22px);
+
+    max-width: 1300px;    
+    width: 100%;
+}
+
+.contact a{
+    text-decoration: none;
+
+    padding: clamp(1rem, 3vw, 1.5rem);
+
+    border: none;
+    border-radius: 15px;
+
+    background: transparent;
+
+    color: #f0b232;
+
+    font-size: clamp(1rem, 4vw, 1.3rem);
+    font-weight: 700;
+
+    cursor: pointer;
+
     transition: .3s ease;
 }
 
-.aboout-content img:hover{
-    transform: scale(1.02);
+.contact a:hover{
+    transform: translateY(-10px);
+
+    color: #111111;
+    background: #f0b232;
 }
-/* ABOUT ----------------------------------------*/
+/* CONTACT ----------------------------------------*/
+
 

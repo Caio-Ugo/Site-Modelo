@@ -3,6 +3,7 @@
 @import url("responsive.css");
 @import url("home.css");
 @import url("hero.css");
+@import url("cards.css");
 
 /* RESET ----------------------------------------*/
 *{
@@ -11,11 +12,21 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
+html, body{
+    overflow-x: hidden;
+}
+
+
 /* BODY ----------------------------------------*/
 @font-face {
     font-family: "Inter";
     src: url("../assets/fonts/Inter-Regular.ttf");
-
+}
+@font-face {
     font-family: "Inter-Bold";
     src: url("../assets/fonts/Inter-Bold.ttf");
 }
@@ -28,17 +39,24 @@ body{
 }
 
 p{
-    line-height: 1.6;
+    line-height: 1.8;
 }
 
 img{
+    width: 100%;
+    height: auto;
+
+    display: block;
+}
+
+video{
     width: 100%;
     height: auto;
 }
 
 .container{
     width: 100%;
-    max-width: 1600px;
+    max-width: 1200px;
 
     margin: 0 auto;
 
